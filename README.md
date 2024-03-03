@@ -1,3 +1,10 @@
+# My React Web App Template - ALPHA
+
+- This project was made using bootstrap 5.3, redux toolkit, and node 20.8.1.
+- See overview of the project at [React App Beta](https://docs.google.com/document/d/1x8yC6yTmkE2Zi8SwVDuQ8VY0O7nSCo0TOUbClVT70Lw/edit?usp=sharing).
+- My Template Alpha version (https://github.com/chuacharlesbon/react-web-alpha).
+- My Template Beta version (https://github.com/chuacharlesbon/react-web-beta).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
