@@ -5,12 +5,12 @@ import { useSelector } from 'react-redux';
 import { selectUserLoading } from './redux/selectors/userSelectors';
 import { Loading } from './Loading';
 import AccordionExample from './components/bootstrap/accordion';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import About from './pages/About/About';
 import Home from './pages/Home/Home';
 
-function App() {
+const App: FC<any> = () => {
   const userLoading = useSelector(selectUserLoading);
   const [myString, setString] = useState("initial");
   const [myString2, setString2] = useState("initial2");

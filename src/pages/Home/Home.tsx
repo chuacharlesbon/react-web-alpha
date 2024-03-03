@@ -25,17 +25,19 @@ const Home: FC<{ myData: string }> = memo(({ myData }) => {
     console.log(`home trigger at ${new Date()}`);
 
     useEffect(() => {
-        console.log(`init trigger at ${new Date()}`);
-        const initUser = async () => {
-            await dispatch(usersActions.login({
-                email: "email",
-                password: "password",
-            }));
+        if(User.user_status === "Loading"){
+            console.log(`init trigger at ${new Date()}`);
+            const initUser = async () => {
+                await dispatch(usersActions.login({
+                    email: "email",
+                    password: "password",
+                }));
+            }
+            initUser();
         }
-        initUser();
         return () => {
             // Perform any necessary cleanup when the effect unmounts (e.g., removing event listeners)
-            dispatch(usersActions.abort);
+            // dispatch(usersActions.abort);
         };
     }, [])
 

@@ -17,7 +17,7 @@ interface STATE {
 export const usersInitialState: STATE = {
     loading: false,
     data: {
-        user_status: "guest"
+        user_status: "Loading"
     }
 };
 
